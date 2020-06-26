@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>NOTES</h1>
-        <nav>
+        <nav> <!--inside the <nav> there are the links that link to another webpage-->
             <ul>
                 <li><a href="index.html" target="_blank">About me</a></li>
                 <li><a href="notes.html" target="_blank">6/23/20</a></li>
@@ -15,12 +15,31 @@
                 <li><a href="designjournal.html" target="_blank">Desgin Journal</a></li>
             </ul>
         </nav>
-        <h2 style="font-size:larger">6/23/20</h2>
+        <h2 class="dates" style="font-size:larger">6/23/20</h2><!--inside the heading, there is a defintion list for that day-->
         <dl>
             <dt>HTML:</dt><dd>Hypertext Markup Language</dd>
             <dt>Hypertext:</dt><dd>Links</dd>
             <dt>Markup:</dt><dd>Format</dd>
             <dt>Language:</dt><dd>Vocabulary, syntax, semantics</dd>
         </dl>
+        <hr>
+        <h2 class="dates" style="font-size:larger">6/24/20</h2>
+        <dl>
+            <dt>Computing devices:</dt><dd>Physical objects that run a program</dd>
+            <dt>Computing system:</dt><dd>Group of computing devices</dd>
+        </dl>
+        <hr>
+        <div>
+        <h2 class="dates" style="font-size:larger">6/25/20</h2><!--these are images on my computer-->
+        <dl>
+            <dt>Computer network:</dt><dd>A group of intercinnected computing devices capable of sending or receiving data</dd><img id="node" src="network-topologies.png" width="412.4" height="235.3">
+            <dt>Path:</dt><dd>A sequence of directly connected computing devices that begins at the sender and ends at the receiver</dd><img src="routing.png" id="routing" width="398" height="224.67">
+            <dt>Routing:</dt><dd>The process of finding a path from sender to receiver</dd><a href="#routing">routing</a>
+            <dt>Packet:</dt><dd>Contain a chunk of data and metadata used for routing the packet between the origin and the destination on the Internet</dd><img src="packets.png" width="524" height="188">
+            <dt>Node:</dt><dd>The individual computers on a network</dd><a href="#node">node</a>
+            <dt>Bandwidth:</dt><dd>The maximum amount of data that can be sent in a fixed amount of time</dd><img src="client-server-internet.png" width="388.5" height="150">
+        </dl>
+        </div>
+        </body>
     </body>
 </html>
