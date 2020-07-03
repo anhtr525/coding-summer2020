@@ -1,0 +1,24 @@
+#project {
+    display: grid; /* I made the project into the grid */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#project h1 {
+    grid-row: 1;
+    grid-column: 1 / 3; /* I made the title take up 2 of the columns */
+    text-align: center;
+}
+#links li {
+    display: flex;
+    flex: 1;
+}
+#links ul {
+    display: flex;
+    flex: 1;
+}
+#links a:visited {
+    color: black;
+}
+a[target="_blank"]:hover {
+    color: red; /* I changed the color of the links after hovering into red only if target="_blank" */
+}

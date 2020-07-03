@@ -1,0 +1,30 @@
+h2 {
+    color: rgb(209, 141, 152); /* I changed the color of the second level-heading into pink */ 
+}
+ul {
+    list-style-type: none; /* I deleted the dots in front of the list */
+}
+a:link {
+    color: black; /* I changed color of the links into black */
+}
+a:visited {
+    font-weight: bold; /* I changed the links after visited into bold */
+}
+* {
+    background-color: rgba(248, 248, 158, 0.952); /* I changed the background color into yellow */
+}
+#links {
+    position: fixed; /* I changed the position of the nav just stay on the top */
+    width: 100%;
+    top: 0px;
+    float: left;
+    z-index: 2;
+}
+#notes {
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+}
+.dates {
+    font-size: larger; /* I changed the font size of the dates larger */
+}

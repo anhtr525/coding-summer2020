@@ -1,0 +1,40 @@
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    float: left;
+    vertical-align: middle;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    grid-gap: 10px;
+}
+li {
+    border: solid black;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 105%;
+}
+body {
+    width: 100%;
+}
+img {
+    float: left;
+}
+h2 {
+    left: 25%;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+    top: 250px;
+    text-align: center;
+}
+@supports (transform: rotate(45deg)) {
+    img:hover { 
+        transform: rotate(45deg)
+        }
+}
