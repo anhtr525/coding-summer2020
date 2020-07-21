@@ -19,11 +19,61 @@ class molecules {
         this.x += this.xspeed;
         this.y += this.yspeed;
     };
+    wall() {
+        if(this.x+this.radius > 800) {
+            this.xspeed*=-1;
+        }
+        if(this.y+this.radius > 800) {
+            this.yspeed*=-1;
+        }
+        if(this.x-this.radius< 0) {
+            this.xspeed*=-1;
+        }
+        if(this.y-this.radius < 0) {
+            this.yspeed*=-1;
+        }
+    };
+    static mole(a, b) {
+        if (Math.sqrt((a.x - b.x)*(a.x - b.x) + (a.y - b.y)*(a.y -b.y)) <= (a.radius+b.radius)){
+            a.xspped*=-1;
+            b.xspeed*=-1;
+            a.yspeed*=-1;
+            b.yspeed*=-1;
+        }
+    };
+}
+function check(arr) {
+    for(let index = 0; index < arr.length; index++) {
+        for(let newIndex = index+1; newIndex < arr.length; newIndex++ ) {
+            molecules.mole(arr[index], arr[newIndex]);
+        }
+    }
 }
 let firstOne = new molecules(50, 25, 25, "yellow", 3, 2);
-function animatemolecules() {
+// function animatemolecules() {
+//     context.clearRect(0, 0, 800, 800);
+//     firstOne.circle();
+//     firstOne.move();
+//     firstOne.wall();
+// }
+function allthemolecules () {
     context.clearRect(0, 0, 800, 800);
-    firstOne.circle();
-    firstOne.move();
+    for(let z = 0; z < arr.length; z++) {
+        arr[z].circle();
+        check(arr);
+        arr[z].move();
+        arr[z].wall();
+        check(arr);
+    }
+    context.strokeRect(0, 0,800, 800);
 }
-setInterval(animatemolecules, 20);
+let numberofmolecules = prompt("How many molecules do you want to put?");
+let arr = [];
+let color = ["yellow", "black", "red", "orange", "blue"] ;
+// arr[0] = new molecules(100, 100, 25, "yellow", 0, 5);
+// arr[1] = new molecules(100, 200, 25, "black", 0, -5);
+let temperature = prompt("What temperature is it?");
+for (let n = 0; n < numberofmolecules; n++) {
+    arr[n] = new molecules(Math.random()*800, Math.random()*800, 25, color[Math.floor(Math.random()*color.length)], (Math.random()*2-1)*temperature, (Math.random()*2-1)*temperature);
+}
+setInterval(allthemolecules, 10);
