@@ -1,0 +1,4 @@
+There will be the prompt when accessing the webpage
+The number of molecules is the number that you answer on the prompt
+There speed of the molecules is based on the temperature that you answer
+These molecules will move and bounce when they hit the wall or each other

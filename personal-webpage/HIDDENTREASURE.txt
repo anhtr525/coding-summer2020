@@ -1,0 +1,4 @@
+There are twelve of the rectangles
+There will be a random rectangle that is chosen
+You have to click to find which one is chosen
+When you click on the right one, there will be an alert
