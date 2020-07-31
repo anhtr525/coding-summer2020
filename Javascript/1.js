@@ -1,17 +1,17 @@
-// for (let x = 1; x < 101; x++) {
-//     if (x%15 == 0) {
-//         console.log("FizzBuzz");
-//     }
-//     else if (x%5 == 0) {
-//         console.log("Buzz");
-//     }
-//     else if (x%3 == 0) {
-//         console.log( "Fizz");
-//     }
-//     else {
-//         console.log(x);
-//     }
-// }
+for (let x = 1; x < 101; x++) {
+    if (x%15 == 0) {
+        console.log("FizzBuzz");
+    }
+    else if (x%5 == 0) {
+        console.log("Buzz");
+    }
+    else if (x%3 == 0) {
+        console.log( "Fizz");
+    }
+    else {
+        console.log(x);
+    }
+}
 // // the program goes through the x%15 first, and then goes through the x%5 and x%3
 
 // // start with the first hashtag
@@ -23,13 +23,13 @@
 //     y+="#";
 // }
 
-// function linearSearch (list, targetvalue) {
-//     for(let index = 0; index < list.length; index++) {
-//         if (list[index] == targetvalue) {
-//             return index;
-//         }
-//     }
-// }
+function linearSearch (list, targetvalue) {
+    for(let index = 0; index < list.length; index++) {
+        if (list[index] == targetvalue) {
+            return index;
+        }
+    }
+}
 // let list = ["apple", "banana", "cherry", "dragonfruid", "strawberry"];
 // let targetvalue = "berry";
 // let foundindex = linearSearch(list, targetvalue);

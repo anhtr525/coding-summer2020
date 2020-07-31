@@ -1,4 +1,5 @@
 There are twelve of the rectangles
 There will be a random rectangle that is chosen
 You have to click to find which one is chosen
-When you click on the right one, there will be an alert
+If the one you click is near the chosen one, there will be an alert for you to know
+When you click on the right one, there will be an alert and tell you how many clicks that you've made
