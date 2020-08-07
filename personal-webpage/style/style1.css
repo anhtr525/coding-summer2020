@@ -1,8 +1,8 @@
-#project {
+/* #project {
     display: grid; /* I made the project into the grid */
-    grid-template-columns: 1fr 1fr;
+/*    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
+} */
 #project h1 {
     grid-row: 1;
     grid-column: 1 / 3; /* I made the title take up 2 of the columns */

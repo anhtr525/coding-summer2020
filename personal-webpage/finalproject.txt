@@ -1,0 +1,11 @@
+There will be a confirm pop up to ask if the player wants to play
+If you click yes, all the things will appear
+You have to click the screen for the game to start
+You press down at the rectangle and drag it from left to right
+When the ball hit the rectangle, it will bounce
+When the ball hit the brick, the brick will disappear and the ball will bounce back
+If you clear all the bricks, you win the game
+If the ball hit the bottom of the canvas, you lose a life
+If you lose all 3 lives, the game is over
+There will be an alert to say if you win or lose at the end of the game
+There will be another confirm to ask if you want to play again or not

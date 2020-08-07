@@ -17,13 +17,6 @@
         </nav>
     <div id="project">
         <h1>Design Journal</h1>
-        <div>
-        <h2>Project 1</h2>
-        <p>
-            Project
-        </p>
-        </div>
-        <div>
         <h2>Final project</h2>
         <ul>
             <li>How many people are affected of COVID19?</li>
@@ -31,8 +24,53 @@
             <li>Animation</li>
             <li>Brick breaker (using JS and HTML)</li>
             <li>Set a specific time for player to play</li>
-        </ul> 
-        </div>
+        </ul>
+        <video src = "brickbreaker.mov" playsinline controls autoplay height="500" width="500">
+            <source src = "brickbreaker.mov" type = "video/mov">
+        </video> 
+        <h2>3A</h2>
+        <ol>
+            <li>The purpose of the program is for entertainment.</li>
+            <li>The game is created for people to play for relaxing purpose.</li>
+            <li>In the video, I showed the confirm that pop up asking people if they want to play or not.</li>
+            <li>Click to make the ball move, and click and drag the rectangle to make the ball bounce.</li>
+            <li>When the ball hit the brick, the brick will disappear.</li>
+            <li>When all the bricks are hit or when the life turns to 0, I made an alert pop up.</li>
+            <li>The input of the game is the confirm.</li>
+            <li>I created the confirm to check if the player want to play the game or not.</li>
+            <li>The ouput are the score, life, and an alert.</li>
+            <li>The score and life are created for player to know how many bricks they've hit or how many life they've lost.</li>
+            <li>An alert is to tell the player that the game is over or they won the game.</li>
+        </ol>
+        <h2>3B</h2>
+        <img src="codesegment1.png" width="450" height="500">
+        <img src="codesegment2.png" widht="100" height="100">
+        <ol>
+            <li>The data structure I used is arrays.</li>
+            <li>In the first line, the array is empty.</li>
+            <li>In the last line, the array contains the new rectangle object that represent the bricks.</li>
+            <li>The arrays help me not to write the code to draw all the rectangles again and again.</li>
+        </ol>
+        <img src="codesegment3.png" width="500" height="100">
+        <img src="4.png" width="500" height="75">
+        <h2>3C</h2>
+        <ol>
+            <li>The function is used to check if the client of the mouse is inside the rectangle or not when you pressing down the mouse.</li>
+            <li>If the client of the mouse is inside the rectangle, the mouse will move as we drag.</li>
+            <li>The first line in the function is to convert the client X of the mouse to the X position of the canvas.</li>
+            <li>The second line is to convert the client Y of the mouse to the Y position of the canvas.</li>
+            <li>The next line is to check if the client X and client Y of the mouse after convert is inside the X and Y position of the rectangle or not.</li>
+            <li>The last line is to change the dragging into true so that the mouse can be able to drag the rectangle.</li>
+        </ol>
+        <h2>3D</h2>
+        <ol>
+            <li>First call: When the mouse is outside of the rectangle.</li>
+            <li>Second call: When the mouse is inside of the rectangle.</li>
+            <li>Condition tested by the first call: the client X and the client Y of the mouse after convert is outside the X and Y position of the rectangle.</li>
+            <li>Condition tested by the second call: the client X and the client Y of the mouse after convert is inside the X and Y position of the rectangle.</li>
+            <li>Result of the first call: calculate the start X and start Y.</li>
+            <li>Result of the second call: calculate the start X and start Y and change the dragging into true.</li>
+        </ol>
     </div>
     </body>
 </html>
